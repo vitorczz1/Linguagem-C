@@ -1,0 +1,31 @@
+﻿//Vitor Costa Batista RA 245512
+//1ºSemestre 2019 -  SI100B
+#include <stdio.h>
+int main(){
+int n1[10],n2[10],resul[20],i;
+
+for (i=0;i < 10;i++){  //Recebe valor vetor1
+scanf("%d",&n1[i]);
+}
+
+for (i=0;i < 10;i++){  //Recebe valor vetor2
+scanf("%d",&n2[i]);
+}
+
+for (i=0;i < 10;i++){
+   resul[i*2] = n1[i];  //vetor3 =  vetor1(n1)[posição i]
+}
+for (i=0;i < 10;i++){
+   resul[i*2+1] = n2[i]; //vetor3 = vetor2(n2)[posição i]
+}
+    /*USAR COM ESTE FOR, TAMBÉM FUNCIONA: */
+//for (i=0;i < 10;i++){  //Printa a saida do vetor1+vetor2 = vetor3
+//printf("%d%c%d%c",n1[i],'|',n2[i],'|');
+//}
+
+for (i=0;i < 20;i++){  //Printa a saida do vetor1+vetor2 = vetor3
+printf("%d%c",resul[i],'|');
+}
+
+	return 0;
+}
